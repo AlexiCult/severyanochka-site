@@ -1,0 +1,62 @@
+@import (reference) '../../less/variables.less';
+
+
+.special-offers__content {
+  display: flex;
+  gap: 40px;
+  @media screen and (max-width: 767px) {
+    flex-flow: row wrap;
+  }
+}
+
+.special-offers__content-item {
+  display: flex;
+  width: 50%;
+  border-radius: 4px;
+  transition: .3s ease;
+  &:nth-child(odd) {
+    background-color: @color-1-2;
+    &:hover {
+      box-shadow: 0px 8px 16px @color-shadow-4;
+    }
+  }
+  &:nth-child(even) {
+    background-color: @color-2-2;
+    &:hover {
+      box-shadow: 0px 8px 16px @color-shadow-5;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.special-offers__content-text {
+  width: 47%;
+  padding-top: 30px;
+  padding-left: 40px;
+  @media screen and (max-width: 991px) {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+
+.special-offers__content-title {
+  @media screen and (max-width: 991px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.special-offers__content-subtitle {
+  margin: 8px 0;
+  line-height: 22px;
+  @media screen and (max-width: 991px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.special-offers__content-image {
+  overflow: hidden;
+}

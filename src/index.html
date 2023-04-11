@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Северяночка</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper">
+      <div class="header-inner">
+        <div class="header__item header__item--logo">
+          <div class="header__logo">
+            <img class="header__logo-img" src="./common.blocks/header/header__logo-img.svg" alt="Лого-изображение">
+            <img class="header__logo-name" src="./common.blocks/header/header__logo-name.svg" alt="Лого-название">
+          </div>
+        </div>
+        <div class="header__item header__item--catalog">
+          <div class="header__catalog-btn" tabindex="0">
+            <div class="header__catalog-toggle"></div>
+            <span class="header__catalog-name">Каталог</span>
+          </div>
+          <form class="header__search">
+            <input class="header__search-text" type="text" placeholder="Найти товар">
+            <button class="header__search-btn" type="submit">
+              <img src="./common.blocks/header/header__search-icon.svg" alt="Искать">
+            </button>
+          </form>
+        </div>
+        <div class="header__item header__item--icons">
+          <a class="header__icon header__favourite" href="">
+            <img src="./common.blocks/header/header__favourite-icon.svg" alt="Избранное">
+            <span>Избранное</span>
+          </a>
+          <a class="header__icon header__orders" href="">
+            <img src="./common.blocks/header/header__orders-icon.svg" alt="Заказы">
+            <span>Заказы</span>
+          </a>
+          <a class="header__icon header__cart" href="">
+            <img src="./common.blocks/header/header__cart-icon.svg" alt="Корзина">
+            <span>Корзина</span>
+          </a>
+        </div>
+        <div class="header__item header__item--user">
+            <img class="header__user-avatar" src="./common.blocks/header/header__avatar.png" alt="Аватар пользователя">
+            <span class="header__user-name">Алексей</span>
+            <img class="header__down-arrow" src="./common.blocks/header/header__down-arrow.svg" alt="Раскрыть меню">
+        </div>
+      </div>
+    </div>
+    <div class="catalog__dropdown">
+      <div class="wrapper">
+        <ul class="dropdown">
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Молоко, сыр, яйцо</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Хлеб</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Фрукты и овощи</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Замороженные продукты</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Напитки</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Кондитерские изделия</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Чай, кофе</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Бакалея</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Здоровое питание</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Зоотовары</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Непродовольственные товары</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Детское питание</a></li>
+          <li class="dropdown__item"><a class="dropdown__item-link" href="#">Мясо, птица, колбаса</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Баннеры -->
+  <article class="banners">
+    <div class="banners__item banner-1">
+      <img class="banner-1__image" src="./common.blocks/banners/banners__banner-1-img.png" alt="Баннер 1">
+      <p class="banner-1__title">Доставка бесплатно от 1000 ₽</p>
+    </div>
+  </article>
+
+  <main>
+
+    <!-- Секция - Акции -->
+    <section class="promotions products">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__header-title">Акции</h2>
+          <a class="section__header-subtitle" href="/">
+            <span>Все акции</span>
+            <img src="./common.blocks/promotions/promotions__subtitle-arrow.svg" alt="">
+          </a>
+        </div>
+        <div class="product-cards">
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-blinchiki_s_myasom.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Г/Ц Блинчики с мясом вес, Россия
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-moloko_prostokvashino.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное коровье
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-kolbasa_salchichon.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскана Итальяно
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-sosiski_molochnye.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыром упаковкой
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция - Новинки -->
+    <section class="new-products products discount-none">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__header-title">Новинки</h2>
+          <a class="section__header-subtitle" href="/">
+            <span>Все новинки</span>
+            <img src="./common.blocks/promotions/promotions__subtitle-arrow.svg" alt="">
+          </a>
+        </div>
+        <div class="product-cards">
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-kolbasa_salchichon-cherkizovo.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>599,99 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Колбаса сырокопченая Сальчичон Черкизово
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-kolbasa_salchichon.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскана Итальяно
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-sosiski_molochnye.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыром упаковкой
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-moloko_prostokvashino.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное коровье
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция - Покупали раньше -->
+    <section class="bought-before products discount-none">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__header-title">Покупали раньше</h2>
+          <a class="section__header-subtitle" href="/">
+            <span>Все покупки</span>
+            <img src="./common.blocks/promotions/promotions__subtitle-arrow.svg" alt="">
+          </a>
+        </div>
+        <div class="product-cards">
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-vetchina_piterskaya.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Ветчина Питерская
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-sosiski_molochnye.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыром упаковкой
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-kolbasa_salchichon-cherkizovo.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>599,99 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Колбаса сырокопченая Сальчичон Черкизово
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-card__image" src="./common.blocks/promotions/promotions__product-moloko_prostokvashino.png" alt="Продукт">
+              <div class="product-card__image-discount">-50%</div>
+              <div class="product-card__image-favourite"></div>
+            </div>
+            <div class="product-card__content">
+              <p class="product-card__price product-card__price--promotion">
+                <span>44,50 ₽</span>
+                <span>С картой</span>
+              </p>
+              <p class="product-card__price product-card__price--regular">
+                <span>50,50 ₽</span>
+                <span>Обычная</span>
+              </p>
+              <p class="product-card__name">
+                Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное коровье
+              </p>
+              <div class="product-card__rating">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-filled.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+                <img src="./common.blocks/promotions/promotions__star-blank.svg" alt="Рейтинг">
+              </div>
+              <button class="product-card__to-cart">В корзину</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция - Специальные предложения -->
+    <section class="special-offers">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__header-title">Специальные предложения</h2>
+        </div>
+        <div class="special-offers__content">
+          <a class="special-offers__content-item" href="/">
+            <div class="special-offers__content-text">
+              <h3 class="special-offers__content-title">Оформите карту «Северяночка»</h3>
+              <p class="special-offers__content-subtitle">И получайте бонусы при покупке в магазинах и на сайте</p>
+            </div>
+            <div class="special-offers__content-image">
+              <img src="./common.blocks/special-offers/special-offers__karta_loyalnosti.png" alt="Карта лояльности">
+            </div>
+          </a>
+          <a class="special-offers__content-item" href="/">
+            <div class="special-offers__content-text">
+              <h3 class="special-offers__content-title">Покупайте акционные товары</h3>
+              <p class="special-offers__content-subtitle">И получайте вдвое больше бонусов</p>
+            </div>
+            <div class="special-offers__content-image">
+              <img src="./common.blocks/special-offers/special-offers__pokupayte_akzionnye_tovary.png" alt="Карта лояльности">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция - Наши магазины -->
+    <section class="our-stores">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__header-title">Наши магазины</h2>
+        </div>
+        <div class="our-stores__btns">
+          <button class="our-stores__btn active-map-btn" id="schelyaur-btn">п.Щельяюр</button>
+          <button class="our-stores__btn" id="vertep-btn">д.Вертеп</button>
+          <button class="our-stores__btn" id="krasnobor-btn">с.Краснобор</button>
+          <button class="our-stores__btn" id="diyur-btn">д.Диюр</button>
+        </div>
+        <div class="our-stores__maps">
+
+          <div class="our-stores__map active-map" id="schelyaur-map" style="overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/parus/25315321891/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Парус</a>
+            <a href="https://yandex.ru/maps/10939/komi-republic/category/grocery/184108031/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Магазин продуктов в Республике Коми</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=53.417971%2C65.325722&mode=poi&poi%5Bpoint%5D=53.409361%2C65.325919&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D25315321891&utm_source=main_stripe_big&z=15.96" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+
+          <div class="our-stores__map" id="vertep-map" style="overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/teremok/123189097260/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Теремок</a>
+            <a href="https://yandex.ru/maps/10939/komi-republic/category/grocery/184108031/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Магазин продуктов в Республике Коми</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=53.207000%2C65.299721&mode=poi&poi%5Bpoint%5D=53.203878%2C65.300369&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D123189097260&utm_source=main_stripe_big&z=15.74" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+
+          <div class="our-stores__map" id="krasnobor-map" style="overflow:hidden;">
+            <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
+            <a href="https://yandex.ru/maps/10939/komi-republic/house/ulitsa_bratyev_semyashkinykh_106/YUoYdA9lQU0OQFhvfX54dXRlbA==/?ll=53.285992%2C65.294919&utm_medium=mapframe&utm_source=maps&z=17.35" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Братьев Семяшкиных, 106 — Яндекс Карты</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=53.285992%2C65.294919&mode=whatshere&utm_source=main_stripe_big&whatshere%5Bpoint%5D=53.285817%2C65.294849&whatshere%5Bzoom%5D=17&z=17.35" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+
+          <div class="our-stores__map" id="diyur-map" style="overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/severyanochka/233421621044/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Северяночка</a>
+            <a href="https://yandex.ru/maps/10939/komi-republic/category/grocery/184108031/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Магазин продуктов в Республике Коми</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=53.365109%2C65.276927&mode=search&oid=233421621044&ol=biz&sctx=ZAAAAAgBEAAaKAoSCR4aFqOutUpAEc%2B%2FXfbrVFBAEhIJbHh6pSxDjD8RsMdESrN5bD8iBgABAgMEBSgKOABAxv0HSAFqAnJ1nQHNzEw9oAEAqAEAvQGqD8McwgEMtI6NyOUG58eL3LMG6gEA8gEA%2BAEAggIW0YHQtdCy0LXRgNGP0L3QvtGH0LrQsIoCAJICAJoCDGRlc2t0b3AtbWFwcw%3D%3D&sll=53.365109%2C65.276927&sspn=0.020628%2C0.005206&text=%D1%81%D0%B5%D0%B2%D0%B5%D1%80%D1%8F%D0%BD%D0%BE%D1%87%D0%BA%D0%B0&utm_source=main_stripe_big&z=16.13" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Секция - Статьи -->
+    <section class="articles">
+      <div class="wrapper">
+        <div class="section__header">
+          <h2 class="section__header-title">Статьи</h2>
+          <a class="section__header-subtitle" href="/">
+            <span>Все статьи</span>
+            <img src="./common.blocks/promotions/promotions__subtitle-arrow.svg" alt="">
+          </a>
+        </div>
+        <div class="articles__items">
+          <article class="article">
+            <img class="article__image" src="./common.blocks/articles/articles__2021-03-05-001.png" alt="Статья">
+            <div class="article__content">
+              <p class="article__date">05.03.2021</p>
+              <h4 class="article__title">Режим использования масок и перчаток на территории магазинов</h4>
+              <p class="article__text">
+                Подробная информация о режимах использования масок и перчаток на территории магазинов "ЛЕНТА". Информация обновляется каждый будний день.
+              </p>
+              <button class="article__btn">Подробнее</button>
+            </div>
+          </article>
+          <article class="article">
+            <img class="article__image" src="./common.blocks/articles/articles__2021-03-05-002.png" alt="Статья">
+            <div class="article__content">
+              <p class="article__date">05.03.2021</p>
+              <h4 class="article__title">Весеннее настроение для каждой</h4>
+              <p class="article__text">
+                8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.
+              </p>
+              <button class="article__btn">Подробнее</button>
+            </div>
+          </article>
+          <article class="article">
+            <img class="article__image" src="./common.blocks/articles/articles__2021-02-22-001.png" alt="Статья">
+            <div class="article__content">
+              <p class="article__date">22.02.2021</p>
+              <h4 class="article__title">ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!</h4>
+              <p class="article__text">
+                Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!
+              </p>
+              <button class="article__btn">Подробнее</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer-inner">
+        <img class="footer__logo" src="./common.blocks/footer/footer__logo.svg" alt="Логотип">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li><a href="/">О компании</a></li>
+            <li><a href="/">Контакты</a></li>
+            <li><a href="/">Вакансии</a></li>
+            <li><a href="/">Статьи</a></li>
+            <li><a href="/">Политика обработки персональных данных</a></li>
+          </ul>
+        </nav>
+        <ul class="footer__social">
+          <li><img src="./common.blocks/footer/footer__instagram.png" alt="Instagram"></li>
+          <li><img src="./common.blocks/footer/footer__vk.png" alt="VKontakte"></li>
+          <li><img src="./common.blocks/footer/footer__facebook.png" alt="Facebook"></li>
+          <li><img src="./common.blocks/footer/footer__ok.png" alt="Odnoklassniki"></li>
+        </ul>
+        <div class="footer__phone">
+          <img src="./common.blocks/footer/footer__phone.svg" alt="Телефон">
+          <a href="tel:88007773333">8 800 777 33 33</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+@import (reference) '../../less/variables.less';
+
+.banners {
+  margin-top: 76px;
+}
+
+.banners__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-1 {
+  background: linear-gradient(@color-white-overlay-1, @color-white-overlay-1), url(./banners__banner-1-bg.png);
+  @media screen and (max-width: 575px) {
+    height: 80px;
+  }
+}
+
+.banner-1__image {
+  @media screen and (max-width: 575px) {
+    display: none;
+  }
+}
+
+.banner-1__title {
+  font-size: 48px;
+  font-weight: 700;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
